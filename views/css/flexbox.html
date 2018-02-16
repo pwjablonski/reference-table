@@ -1,0 +1,108 @@
+---
+layout: default
+permalink: flexbox.html
+---
+
+    <h2 class="title">CSS Flexbox</h2>
+
+    <div class="row">
+      <div class="col-7">
+        <p>To use flexbox, first set the <code>display</code> property of the parent element to <code>flex</code>.</p>
+        <p><em>(In the example to the right, our parent element has a class name of <code>container</code>.)</em></p>
+      </div>
+      <div class="col-5">
+<a href="https://popcode.org/?snapshot=26284470-3b35-4e31-835e-f05f818a3775" class="popcode-link" target="_blank">See it in Popcode!</a>
+<pre data-popcode="https://popcode.org"><code class="language-css">.container {
+display: flex;
+}</code></pre>
+      </div>
+    </div>
+
+
+      <div class="row">
+        <div class="col-12">
+          <br>
+          <h3>Aligning Child Elements</h3>
+          <p>To align the child elements to a specific side, use the <code>justify-content</code> property with one of the following values: <code>flex-start</code>, <code>center</code>, <code>flex-end</code>, <code>space-between</code>, <code>space-around</code></p>
+          <p>For example, the CSS code below will align the child elements (colored boxes) to the center of the parent element with the class name of <code>container</code>.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-5">
+<a href="https://popcode.org/?snapshot=c9813447-0691-48e6-9015-21ba20ba9d39" class="popcode-link" target="_blank">See it in Popcode!</a>
+<pre class="language-css"><code>.container {
+display: flex;
+justify-content: center;
+}</code></pre>
+        </div>
+        <div class="col-7">
+          <div id="flexbox-example">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-5">
+          <p class="align-right"><strong>You try:</strong> click one of the properties to see how the child elements are arranged.</p>
+        </div>
+        <div class="col-7">
+          <div id="flexbox-example-live">
+            <ul>
+              <li><code>flex-start</code></li>
+              <li><code>center</code></li>
+              <li><code>flex-end</code></li>
+              <li><code>space-between</code></li>
+              <li><code>space-around</code></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3>Flexbox Columns</h3>
+          <p>Other than aligning child elements, flexbox can also be used to create columns. <br>Simply give each child element a <code>width</code> and now you have a columned layout!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+<a href="https://popcode.org/?snapshot=3e923ccf-b0fd-4a2c-a080-62c59ced0e55" class="popcode-link" target="_blank">See it in Popcode!</a>      
+<pre class="language-css"><code>.section {
+display: flex;
+}
+
+.left {
+width: 30%;
+}
+
+.right {
+width: 70%;
+}
+</code></pre>              
+        </div>
+        <div class="col-6">
+          <div id="flexbox-column-example" class="section">
+            <div class="left">Column A</div>
+            <div class="right">Column B</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <br>
+          <h3>Additional Resources</h3>
+          <p>Looking for more fun with flexbox?</p>
+          <ul>
+            <li>Test your flexbox skills in this challenging (yet fun!) game: <a href="http://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a>.</li>
+            <li>Learn everything you could ever want (and more) about flexbox with <a href="https://www.sketchingwithcss.com/samplechapter/cheatsheet.html" target="_blank">this cheat sheet</a>.</li>
+          </ul>
+            
+        </div>
+      </div>

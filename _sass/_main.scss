@@ -1,0 +1,186 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab';
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+main.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+main {
+  background-color: #fbd4cb;
+}
+header {
+  display: block;
+  width: 100%;
+  padding: 30px 0 10px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+}
+header h1 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+header h1 span.logo {
+  display: block;
+  float: left;
+  width: 110px;
+  height: 22px;
+  margin-right: 15px;
+  font-size: 0px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+#menu {
+  background-color: #ef5330;
+  text-align: right;
+  padding: 25px;
+}
+#menu ul {
+  list-style: none;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #e6e6e6;
+}
+#menu ul li {
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+#menu ul li:hover {
+  color: #fafafa;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+#menu ul.top-menu {
+  font-size: 20px;
+}
+#menu ul.top-menu li {
+  padding: 5px 0;
+}
+#menu ul.top-menu li.current {
+  color: #fff;
+}
+#menu ul.sub-menu {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+#menu ul.sub-menu li {
+  margin: 0;
+  padding: 0;
+}
+#content {
+  padding: 50px;
+  background-color: #fff;
+}
+#content .row {
+  margin-bottom: 10px;
+  align-content: flex-start;
+}
+#content h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #ef5330;
+  font-size: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+#content h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #4b4b4b;
+}
+#content p {
+  font-size: 16px;
+}
+#content p.align-right {
+  text-align: right;
+}
+#content em {
+  font-size: 90%;
+}
+#content strong {
+  color: #ef5330;
+}
+#content a {
+  color: #ef5330;
+}
+#content pre {
+  padding: 10px;
+  margin-top: 0;
+  background-color: #f0f0f0;
+  user-select: none;
+}
+#content .popcode-link {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  right: 15px;
+  top: 0px;
+  opacity: 0.5;
+  background-color: #00ff85;
+  padding: 5px 10px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #323232;
+  transition: opacity 0.15s ease-in;
+}
+#content .popcode-link:hover {
+  opacity: 1;
+}
+#flexbox-example {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ef5330;
+  transition: all 0.25s ease-in;
+}
+#flexbox-example .box {
+  padding: 20px 30px;
+  color: #fff;
+}
+#flexbox-example .box.box1 {
+  background-color: #008000;
+}
+#flexbox-example .box.box2 {
+  background-color: #ffa500;
+}
+#flexbox-example .box.box3 {
+  background-color: #f00;
+}
+#flexbox-example .box.box4 {
+  background-color: #00f;
+}
+#flexbox-example-live ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#flexbox-example-live ul li {
+  margin: 5px 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+#flexbox-example-live ul li:hover {
+  background-color: #dcdcdc;
+}
+#flexbox-column-example {
+  display: flex;
+  border: 2px solid #969696;
+}
+#flexbox-column-example .left {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 100px 10px;
+}
+#flexbox-column-example .right {
+  width: 70%;
+  background-color: #dcdcdc;
+  padding: 100px 10px;
+}
