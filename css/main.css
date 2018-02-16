@@ -50,27 +50,40 @@ header h1 span.logo {
   cursor: pointer;
   transition: all 0.25s ease-in;
 }
+
+#menu ul li a {
+    color: #e6e6e6;
+}
+
 #menu ul li:hover {
   color: #fafafa;
   margin-right: 5px;
   padding-right: 5px;
 }
+
+#menu ul li:hover a {
+    color: #fafafa;
+}
+
 #menu ul.top-menu {
   font-size: 20px;
 }
-#menu ul.top-menu li {
+#menu ul.top-menu li a {
   padding: 5px 0;
+  text-decoration: none;
 }
 #menu ul.top-menu li.current {
   color: #fff;
 }
 #menu ul.sub-menu {
+  display: none;
   font-size: 15px;
   padding-bottom: 20px;
 }
-#menu ul.sub-menu li {
+#menu ul.sub-menu li a {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 #content {
   padding: 50px;

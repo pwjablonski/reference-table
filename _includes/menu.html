@@ -1,15 +1,23 @@
 <div id="menu" class="col-3">
     <ul class="top-menu">
-      <li class="current"><a href="{{ "index.html" | relative_url }}">Overview</a></li>
+      <li class="current"><a href="{{ "/" | relative_url }}">Overview</a></li>
       <li>Syntax</li>
-      <li>HTML</li>
-      <li>CSS</li>
+      <li>HTML
+        <ul class="sub-menu">
+          <li>Tags</li>
+          <li>Attributes</li>
+          <li>Nesting</li>
+          <li></li>
+        </ul>
+      </li>
+      <li>CSS
         <ul class="sub-menu">
           <li>Selectors</li>
           <li>Properties &amp; Values</li>
           <li>Layouts</li>
           <li><a href="{{ "flexbox.html" | relative_url }}">Flexbox</a></li>
         </ul>
+      </li>
       <li>jQuery</li>
       <li>Javascript</li>
     </ul>
